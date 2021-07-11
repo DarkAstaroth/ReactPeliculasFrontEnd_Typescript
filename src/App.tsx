@@ -32,7 +32,7 @@ function App() {
           },
         ],
       });
-    }, 3000);
+    }, 500);
 
     return () => clearTimeout(timeId);
   }, []);
