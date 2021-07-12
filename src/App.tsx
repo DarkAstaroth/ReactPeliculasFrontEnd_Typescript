@@ -13,9 +13,12 @@ function App() {
         <div className="container">
           <Switch>
             {rutas.map((ruta) => (
-              <Route key={ruta.path} path={ruta.path} exact={ruta.exact}>
-                <ruta.componente />
-              </Route>
+              <Route
+                key={ruta.path}
+                path={ruta.path}
+                exact={ruta.exact}
+                component={ruta.componente}
+              />
             ))}
           </Switch>
         </div>
