@@ -1,8 +1,7 @@
-import { Pelicula } from "./peliculas.model";
-import PeliculaIndividual from "./peliculaIndividual";
-import Cargando from "../utils/cargando";
-import css from "./listadoPeliculas.module.css";
 import ListadoGenerico from "../utils/listadoGenerico";
+import css from "./listadoPeliculas.module.css";
+import PeliculaIndividual from "./peliculaIndividual";
+import { Pelicula } from "./peliculas.model";
 
 export default function ListadoPeliculas(props: listadoPeliculasProps) {
   return (
