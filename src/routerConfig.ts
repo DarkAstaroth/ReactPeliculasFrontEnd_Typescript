@@ -28,7 +28,7 @@ const rutas = [
     componente: CrearGenero,
   },
   {
-    path: "/generos/editar",
+    path: "/generos/editar/:id(\\d+)",
     componente: EditarGenero,
   },
   {
@@ -41,7 +41,7 @@ const rutas = [
     componente: CrearActores,
   },
   {
-    path: "/actores/editar",
+    path: "/actores/editar/:id(\\d+)",
     componente: EditarActores,
   },
   {
@@ -54,7 +54,7 @@ const rutas = [
     componente: CrearCines,
   },
   {
-    path: "/cines/editar",
+    path: "/cines/editar/:id(\\d+)",
     componente: EditarCines,
   },
   {
@@ -62,7 +62,7 @@ const rutas = [
     componente: CrearPeliculas,
   },
   {
-    path: "/peliculas/editar",
+    path: "/peliculas/editar/:id(\\d+)",
     componente: EditarPeliculas,
   },
   {
