@@ -11,6 +11,7 @@ import LandingPage from "./landingPage";
 import CrearPeliculas from "./Peliculas/crearPeliculas";
 import EditarPeliculas from "./Peliculas/editarPeliculas";
 import FiltroPeliculas from "./Peliculas/filtroPeliculas";
+import RedireccinarLanding from './utils/redireccionarLanding';
 
 const rutas = [
   {
@@ -68,6 +69,10 @@ const rutas = [
   {
     path: "/peliculas/filtro",
     componente: FiltroPeliculas,
+  },
+  {
+    path: "*",
+    componente: RedireccinarLanding,
   },
 ];
 
