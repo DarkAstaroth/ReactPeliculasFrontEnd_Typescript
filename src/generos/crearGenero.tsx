@@ -14,20 +14,27 @@ export default function CrearGenero() {
         initialValues={{
           nombre: "",
         }}
-        onSubmit={(values) => {
+        onSubmit={async (values) => {
+          await new Promise((r) => setTimeout(r, 100));
           console.log(values);
         }}
         validationSchema={Yup.object({
-          nombre: Yup.string().required("Este campo es requerido").primeraLetraMayuscula()
+          nombre: Yup.string()
+            .required("Este campo es requerido")
+            .primeraLetraMayuscula(),
         })}
       >
-        <Form>
-          <FormGroupText campo="nombre" label="Nombre"/>
-          <Button type="submit">Salvar</Button>
-          <Link className="btn btn-secondary" to="/generos">
-            Cancelar
-          </Link>
-        </Form>
+        {(formikProps) => (
+          <Form>
+            <FormGroupText campo="nombre" label="Nombre" />
+            <Button type="submit" disabled={formikProps.isSubmitting}>
+              Salvar
+            </Button>
+            <Link className="btn btn-secondary" to="/generos">
+              Cancelar
+            </Link>
+          </Form>
+        )}
       </Formik>
       {/* <Button onClick={ ()=> history.push('/generos')}>Salvar</Button> */}
     </>
