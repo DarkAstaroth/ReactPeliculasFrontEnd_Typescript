@@ -1,8 +1,3 @@
-import { Form, Formik } from "formik";
-import { Link } from "react-router-dom";
-import * as Yup from "yup";
-import Button from "../utils/button";
-import FormGroupText from "../utils/formGroupText";
 import FormularioGeneros from "./formularioGeneros";
 
 export default function CrearGenero() {

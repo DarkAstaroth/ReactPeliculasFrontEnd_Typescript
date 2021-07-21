@@ -1,8 +1,7 @@
-import { useParams } from "react-router-dom";
 import FormularioGeneros from "./formularioGeneros";
 
 export default function EditarGenero() {
-  const { id }: any = useParams();
+  // const { id }: any = useParams();
 
   return (
     <>

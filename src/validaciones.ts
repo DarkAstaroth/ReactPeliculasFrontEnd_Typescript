@@ -1,4 +1,3 @@
-import { collapseTextChangeRangesAcrossMultipleVersions } from "typescript";
 import * as Yup from "yup";
 
 export default function configurarValidaciones() {
